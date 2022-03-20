@@ -1,3 +1,4 @@
+#! /usr/bin/env python3
 from piawg import piawg
 from pick import pick
 from getpass import getpass
