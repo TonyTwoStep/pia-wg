@@ -1,12 +1,4 @@
 # pia-wg
-A WireGuard configuration utility for Private Internet Access
-
-This is a Python utility that generates WireGuard configuration files for the Private Internet Access VPN service. This allows you to take advantage of the WireGuard protocol without relying on PIA's proprietary client.
-
-This was created by reverse engineering the [manual-connections](https://github.com/pia-foss/manual-connections) script released by PIA. At this stage, the tool is a quick and dirty attempt to get things working. It could break at any moment if PIA makes changes to their API.
-
-pia-wg runs on both Windows and Linux.
-
 ## Modifications of this fork
 ### Specify PIA credentials via env vars (optional)
 - `PIA_USERNAME` (the pia username)
@@ -19,6 +11,16 @@ If these vars are not specified the program will fall back to the default behavi
 - `--server` or `-s` - specify a server to use when generating the config
 
 If a server is not specified manually with `-s` the program will fall back to the default behavior of having you select a server from the list UI 
+
+## Original README contents
+A WireGuard configuration utility for Private Internet Access
+
+This is a Python utility that generates WireGuard configuration files for the Private Internet Access VPN service. This allows you to take advantage of the WireGuard protocol without relying on PIA's proprietary client.
+
+This was created by reverse engineering the [manual-connections](https://github.com/pia-foss/manual-connections) script released by PIA. At this stage, the tool is a quick and dirty attempt to get things working. It could break at any moment if PIA makes changes to their API.
+
+pia-wg runs on both Windows and Linux.
+
 
 ## Windows
 * Install the latest version of [Python 3](https://www.python.org/downloads/windows/)
