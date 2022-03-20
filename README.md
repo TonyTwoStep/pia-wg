@@ -7,6 +7,19 @@ This was created by reverse engineering the [manual-connections](https://github.
 
 pia-wg runs on both Windows and Linux.
 
+## Modifications of this fork
+### Specify PIA credentials via env vars (optional)
+- `PIA_USERNAME` (the pia username)
+- `PIA_PASSWORD` (the pia password)
+ 
+If these vars are not specified the program will fall back to the default behavior to get the credentials (user prompt) 
+
+### CLI arguments for `generate-config.py` (optional)
+- `--list` or `-l` - list out the availble PIA servers to use in the generated config
+- `--server` or `-s` - specify a server to use when generating the config
+
+If a server is not specified manually with `-s` the program will fall back to the default behavior of having you select a server from the list UI 
+
 ## Windows
 * Install the latest version of [Python 3](https://www.python.org/downloads/windows/)
   * Select "Add Python to environment variables"
